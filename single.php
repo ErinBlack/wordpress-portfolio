@@ -10,25 +10,25 @@
           <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
             <!-- Single Blog Post Information -->
             <article class="post">
-            <!-- Post Data  -->
-            <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-            <!-- Feature Image -->
+              <!-- Post Data  -->
+              <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+              <!-- Feature Image -->
 
               <ul class="post-meta no-bullet">
                 <li class="author">
-                    <span class="wpt-avatar small">
-                      <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
-                    </span>
-                    by <?php the_author_posts_link(); ?>
+                  <span class="wpt-avatar small">
+                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 24 ); ?>
+                  </span>
+                  by <?php the_author_posts_link(); ?>
                 </li>
                 <li class="cat">in <?php the_category( ', ' ); ?></li>
                 <li class="date"> <?php the_time('F j, Y'); ?></li>
               </ul>
               <?php if(get_the_post_thumbnail() ) :  ?>
-              <div class="img-container">
-               <?php the_post_thumbnail('large'); ?>
-              </div>
-            <?php endif; ?>
+                <div class="img-container">
+                  <?php the_post_thumbnail('large'); ?>
+                </div>
+              <?php endif; ?>
               <?php the_content(); ?>
             </article>
             <!-- No posts  -->
@@ -37,13 +37,13 @@
           <?php endif; ?>
         </div>
       </div>
-    <!-- Secondary Column -->
-    <div class="small-12 medium-4 medium-pull-8 columns">
-      <div class="secondary">
-        <h2 class="module-heading">Sidebar</h2>
+      <!-- Secondary Column -->
+      <div class="small-12 medium-4 medium-pull-8 columns">
+        <div class="secondary">
+          <h2 class="module-heading">Sidebar</h2>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </section>
 
