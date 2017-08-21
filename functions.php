@@ -3,7 +3,11 @@
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
-
+//set snippet code length for position
+function wpt_excerpt_length($length) {
+  return 16;
+} //end wpt_excerpt_length
+add_filter( 'excerpt_length', 'wpt_excerpt_length', 999 );
   //adding nav menus
   function register_theme_menus() {
 

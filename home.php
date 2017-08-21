@@ -22,7 +22,7 @@
                 <li class="cat">in <?php the_category(); ?></li>
                 <li class="date"> <?php the_date (); ?></li>
               </ul>
-              <?php if(the_post_thumbnail() ) :  ?>
+              <?php if(get_the_post_thumbnail() ) :  ?>
               <div class="img-container">
                <?php the_post_thumbnail('large'); ?>
               </div>
