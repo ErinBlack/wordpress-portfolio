@@ -6,6 +6,10 @@
       <!-- Primary Column -->
       <div class="small-12 medium-7 medium-offset-1 medium-push-4 columns">
         <div class="primary">
+          <div class="leader">
+            <h1><?php wp_title(''); ?> Blog Posts</h1>
+
+          </div>
           <!-- Have Posts  -->
           <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
             <!-- Single Blog Post Information -->
