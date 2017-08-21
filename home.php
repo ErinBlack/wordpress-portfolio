@@ -19,8 +19,8 @@
                     </span>
                     by <?php the_author_posts_link(); ?>
                 </li>
-                <li class="cat">in <?php the_category(); ?></li>
-                <li class="date"> <?php the_date (); ?></li>
+                <li class="cat">in <?php the_category( ', ' ); ?></li>
+                <li class="date"> <?php the_time('F j, Y'); ?></li>
               </ul>
               <?php if(get_the_post_thumbnail() ) :  ?>
               <div class="img-container">
