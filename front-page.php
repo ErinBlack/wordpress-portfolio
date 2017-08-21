@@ -9,11 +9,11 @@
         <h1><?php the_title(); ?></h1>
         <p><?php the_content(); ?></p>
         <!-- No posts  -->
-      <?php endwhile; else :?>
-        <p><?php _e( 'Sorry, no posts match your criteria.'); ?></p>
-      <?php endif; ?>
+      <?php endwhile; endif; ?>
+
     </div>
   </div>
 </section>
-
+<!-- Grabbing all of the portfolio posts -->
+<?php get_template_part('content', 'portfolio'); ?>
 <?php get_footer(); ?>
